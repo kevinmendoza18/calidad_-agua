@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `datos` (
   `muestra3` int(11) NOT NULL DEFAULT '0',
   `muestra4` int(11) NOT NULL DEFAULT '0',
   `fecha_muestra` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
+   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=96 DEFAULT CHARSET=utf8;
 
 -- La exportación de datos fue deseleccionada.

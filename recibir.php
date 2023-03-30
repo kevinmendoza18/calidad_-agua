@@ -25,6 +25,8 @@
         if (!isset($_POST['id'])) {
             $query = "INSERT INTO datos(muestra1, muestra2, muestra3, muestra4) values($muestra1, $muestra2, $muestra3, $muestra4)";
             // die();
+        } else {
+            $query = "UPDATE datos SET muestra1 = {$muestra1}, muestra2 = {$muestra2}, muestra3 = {$muestra3}, muestra4 = {$muestra4} WHERE id = {$_POST['id']}";
         }
         $result = mysqli_query($con, $query) or die(mysqli_error($con));
         $muestras = [$_POST['muestra1'], $_POST['muestra2'], $_POST['muestra3'], $_POST['muestra4']];
